@@ -1,0 +1,10 @@
+name: crowdsync
+root: ~/Code/crowdsync
+pre_window: nvm use v7.0.0
+windows:
+  - server: vim
+  - angular: cd app && ng serve
+  - docker: docker-compose build && docker-compose up
+  - cli: 
+  - mongo: mongo
+  - repl: node

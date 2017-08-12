@@ -1,0 +1,7 @@
+#!/bin/bash
+
+dir=/Users/jdavis1002/blog
+
+atom $dir
+
+tmuxinator blog

@@ -1,0 +1,10 @@
+name: jampay
+root: ~/Code/jampay/app
+pre_window: nvm use stable
+windows:
+  - server:
+      layout: main-horizontal
+      panes:
+        - 
+        - grunt serve
+  - database: mongod

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+dir=/Users/jdavis1002/Code/apqc/apidocs
+projectname="APQC API"
+
+toggl stop
+toggl start $projectname
+atom $dir
+
+open https://github.com/jwd2a/APQC_API/issues
+open http://127.0.0.1:3000/
+tmux detach
+tmuxinator apqcapidocs

@@ -1,0 +1,10 @@
+{
+  "html": {
+    "snippets": {
+    },
+    "abbreviations": {
+      "bsmodal": "div.modal.fade.in>div.modal-dialog>div.modal-content>div.modal-header>button[type=button data-dismiss=modal].close+h4^div.modal-body+div.modal-footer>button[type=button].btn.btn-primary+button[type=button].btn.dark.btn-outline[data-dismiss=modal]",
+      "bsfield":".form-group>label+input"
+    }
+  }
+}

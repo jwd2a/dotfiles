@@ -1,0 +1,10 @@
+name: blog
+root: ~/blog
+
+windows:
+  - server:
+      layout: main-horizontal
+      panes:
+        - 
+        - jekyll serve
+

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+dir=/Users/jdavis1002/Code/apqc/admin
+projectname="APQC Admin Console"
+
+toggl stop
+toggl start $projectname
+atom $dir
+
+open https://github.com/jwd2a/APQC-Admin/issues
+open http://127.0.0.1:3000/
+tmux detach
+tmuxinator apqcadmin

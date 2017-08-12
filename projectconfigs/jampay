@@ -1,0 +1,6 @@
+#!/bin/bash
+
+dir=/Users/jdavis1002/Code/jampay/app
+
+open https://github.com/jwd2a/tipping/issues
+tmuxinator jampay

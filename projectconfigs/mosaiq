@@ -1,0 +1,12 @@
+#!/bin/bash
+
+dir=/Users/jdavis1002/Code/prototypes/apqc/pcf_angular
+projectname="APQC - MosaiQ"
+
+toggl stop
+toggl start $projectname
+atom $dir
+
+open https://github.com/jwd2a/APQC-PCF-Builder/issues
+tmux detach
+tmuxinator mosaiq

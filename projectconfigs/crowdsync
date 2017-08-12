@@ -1,0 +1,5 @@
+#!/bin/bash
+
+dir=/Users/jdavis1002/Code/crowdsync
+
+tmuxinator crowdsync

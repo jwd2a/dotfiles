@@ -1,0 +1,14 @@
+name: fieldplan
+root: ~/Code/recruiting
+pre_window: nvm use v4.4.5
+windows:
+  - server:
+      layout: main-vertical
+      panes:
+        - 
+        - gulp serve
+  - database: mongod
+  - ultrahook: ultrahook recruitingapp 9000
+  - cli: 
+  - mongo: mongo
+  - repl: node

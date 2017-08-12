@@ -1,0 +1,11 @@
+name: apqcapidocs
+root: ~/Code/apqc/apidocs
+
+pre_window: nvm use 0.12.3
+
+windows:
+  - docs:
+      layout: main-horizontal
+      panes:
+        - 
+        - filewatcher 'spec/spec.yml' 'yaml2json spec/spec.yml > spec/spec.json && cd docs && gulp && pwd'

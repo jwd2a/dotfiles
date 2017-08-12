@@ -1,0 +1,11 @@
+name: mosaiq
+root: ~/Code/prototypes/apqc/pcf_angular
+
+windows:
+  - server:
+      layout: main-horizontal
+      panes:
+        - 
+        - grunt serve
+  - database: mongod
+  - editor: atom
