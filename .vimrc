@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 set nocompatible
 set tabstop=2
 set shiftwidth=2
@@ -8,6 +10,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 set rtp^=~/.vim/bundle/ctrlp.vim
 set noswapfile
 set expandtab
+set lazyredraw
 
 filetype on 
 
@@ -63,12 +66,10 @@ Plugin 'valloric/MatchTagAlways'
 Plugin 'tpope/vim-surround'
 Plugin 'HerringtonDarkholme/yats.vim'
 Plugin 'mxw/vim-jsx'
+Plugin 'jimmyhchan/dustjs.vim'
 
 call vundle#end()
 filetype plugin indent on 
-
-syntax enable
-
 
 "Ignore shit we don't want to autocomplete with ctrlp
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|target|dist)|(\.(swp|ico|git|svn))$'
@@ -78,15 +79,16 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
-"Syntastic Configs
+"Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_javascript_checkers=['eslint']
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
 
 
 "Disable the arrow keys to learn this shit correctly
